@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College AI Assistant</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>College AI Assistant</h1>
+
+    <div id="chat-box"></div>
+
+    <div class="input-area">
+
+        <form id="chat-form">
+
+            {% csrf_token %}
+
+            <textarea
+                id="prompt"
+                placeholder="Ask anything..."
+            ></textarea>
+
+            <!-- Add id and change type -->
+            <button id="send-btn" type="button">Send</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="{% static 'js/chat.js' %}"></script>
+
+</body>
+</html>
