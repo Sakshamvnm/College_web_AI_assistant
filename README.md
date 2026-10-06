@@ -15,6 +15,16 @@ Steps needed to follow-:
 6) RAG chunking,embedding,ingestion files are perfect.DO NOT TOUCH THEM!!!
 7) Django is compulsory and here are some django commands needed-:
 
+# To check if the data loaded is in database and embed it
+python -m rag.build_index
+
+# To run the chatbot which gives the answers which is in our database
+python -m rag.pipeline
+
+# To run the chatbot of the website which does not take our data
+python manage.py runserver
+
+
 
 
 
